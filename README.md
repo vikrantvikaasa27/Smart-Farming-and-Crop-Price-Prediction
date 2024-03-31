@@ -16,11 +16,11 @@ Our proposed solution is a mobile and web app named "Farm" that optimizes agricu
 
 ![untitled (1)](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b409c371-1702-4478-a681-8befed6f9304)
 
-## Intel OneDNN Integration
+## Intel Tools
 
-Our solution leverages Intel OneDNN (Deep Neural Network Library) for efficient and accurate crop disease prediction. By utilizing Intel OneDNN's capabilities, Farm ensures reliable and high-performance AI-driven insights for farmers.
+Our solution leverages Intel TensorFlow and also used the sklearnex for the crop reecommendation for efficient and accurate crop disease prediction. By utilizing it's capabilities, Farm ensures reliable and high-performance AI-driven insights for farmers.
 
-For detailed API documentation and usage guidelines, please refer to the [Intel OneDNN Documentation](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/onednn.html).
+
 
 ## Contributors
 
