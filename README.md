@@ -1,7 +1,7 @@
 
 # Farm - Intelligent Farming Mobile and Web App
 
-![Farm Logo](link_to_your_logo)
+
 
 Farm is an intelligent farming system that harmoniously integrates IoT and AI technologies to optimize agricultural practices and enhance crop management for farmers.
 
