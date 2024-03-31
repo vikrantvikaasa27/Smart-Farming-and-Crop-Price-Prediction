@@ -54,6 +54,30 @@ For detailed API documentation and usage guidelines, please refer to the [Intel 
 
 2. Access the web app by opening `http://localhost:5000` in your web browser.
 
+## Output
+**Flask App**
+
+![Screenshot 2024-04-01 002531](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/a39694a1-4135-40f3-8cdb-70ff547f5397)
+
+![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/ea9be19a-cf0c-46ad-a81e-7f6a63b19868)
+
+![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/271e9f9d-ab26-4b31-b719-b832c3aab79f)
+
+![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/94f64ced-5974-4d9c-8954-c33584ea68ab)
+
+![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b1c075a1-1c5f-48e2-9866-f055f0e61f6f)
+
+**Crop Recommendation**
+
+![Screenshot 2024-04-01 001814](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/fc49682a-523c-4efc-92dd-52d77d5b053c)
+
+![Screenshot 2024-04-01 001819](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/0b2b7803-62b5-402a-a66c-bee0b5c94428)
+
+
+![FarmFriend-GoogleChrome2024-04-0100-17-51-ezgif com-video-to-gif-converter](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/ef4fe6e6-4a6a-4faf-b73a-a48e482fa319)
+
+
+
 ## Features
 
 1. **Real-Time Monitoring:** Monitor soil moisture, temperature, and crop health using IoT sensors.
