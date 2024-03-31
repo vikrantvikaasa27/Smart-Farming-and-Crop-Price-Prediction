@@ -96,9 +96,9 @@ For detailed API documentation and usage guidelines, please refer to the [Intel 
 
 ## Drive Link
 
-For detailed explanation refer to our [Farm Drive Folder]([https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link)).
+For detailed explanation refer to our ([Farm Drive Folder](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link)).
 
-For Models that are trained for the Disease Prediction  [Model]([https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
+For Models that are trained for the Disease Prediction  ([Model](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
 
 
 ![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b93904d1-c66e-4e02-ade2-51c7686e9793)
