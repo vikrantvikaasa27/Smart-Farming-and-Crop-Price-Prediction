@@ -25,8 +25,8 @@ For detailed API documentation and usage guidelines, please refer to the [Intel 
 ## Contributors
 
 - Shobika ([@Shobika-k2004]([https://github.com/johndoe](https://github.com/Shobika-k2004)))
-- Jane Smith ([@janesmith](https://github.com/janesmith))
-- Alex Johnson ([@alexj](https://github.com/alexj))
+- Rithika ([@janesmith](https://github.com/janesmith))
+- Sahaana ([@alexj](https://github.com/alexj))
 
 ## Installation
 
