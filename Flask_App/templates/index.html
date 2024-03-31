@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Farm Friend</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--//booststrap end-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" />
+  <!-- //font-awesome icons -->
+
+  <!--stylesheets-->
+  <link href="../static/styles/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <style>
+    /* Styles for the pop-up */
+    .popup {
+      display: none; /* Initially hide the pop-up */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #ccc;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      max-width: 80%;
+      max-height: 80%;
+      overflow-y: auto;
+    }
+    
+    /* Styles for the captured image preview */
+    #output-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+  </style>
+  
+  
+</head>
+
+<body>
+  <div class="main-top" id="home">
+    <!-- header -->
+    <div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1><a href="index.html">Farm Friend</a></h1>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <!-- <li><a href="#" id="openPopup">Soil Moisture</a></li> -->
+          <li><button type="button" class="btn btn-primary" id="detectButton">
+            Soil Moisture
+           </button></li>
+        </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+    <!-- //header -->
+   <!-- Popup content -->
+   <div id="popup" style="display: none;">
+    <h2>Soil Moisture Information</h2>
+    <p id="moistureLevel">Moisture Level: N/A</p>
+    <p id="wateringStatus">Watering Status: N/A</p>
+    <p id="moistureState">Moisture State: N/A</p>
+  </div>
+    <!-- banner -->
+    <div class="main-banner text-center">
+      <div class="container">
+        <div class="style-banner">
+          <h4 class="mb-2">Welcome To Farm Friend</h4>
+          <h5>Offering Farming Solutions Worldwide
+          </h5>
+        </div>
+        <div class="two-demo-button mt-md-4 mt-3">
+          <!--<p> Developing models for making disease detection easy and providing solutions for improving crop production
+          </p>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- //banner -->
+
+  <!-- about -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-6 about-imgs-txt pt-3">
+          <img src="../static/images/4.jpg" alt="news image" class="img-fluid" style="border-radius: 8px;">
+        </div>
+        <div class="col-lg-6 text-justify about-two-grids pt-3">
+          <h3 class="title text-center">About</h3>
+          <div class="about-para-txt">
+            <p>Welcome to Farm Friend, a revolutionary web-based solution transforming modern agriculture and promoting sustainable farming practices. 
+              Our app empowers farmers with cutting-edge tools for early disease detection, optimized resource management, market insights, and user-friendly interface, ensuring 
+              increased crop productivity, reduced environmental impact, and enhanced food security. 
+              Join us in creating a more resilient and sustainable future for agriculture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //about -->
+
+  <!-- service -->
+  <section class="service pb-5 " id="features">
+    <div class="container ">
+      <h3 class="title text-center mb-3">Features</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-sun-o" aria-hidden="true"></span>
+
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Weather Report</h4>
+              <p>Shows the real time current Weather Report for any location in the World.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#weatherModal">
+               Weather Report
+              </button>
+              <!-- Modal -->
+<div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="weatherModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="weatherModalLabel">Weather Report</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Input field for location -->
+        <div class="form-group">
+          <label for="inputLocation">Enter Location:</label>
+          <input type="text" class="form-control" id="inputLocation" placeholder="Enter city or location">
+        </div>
+        <!-- Weather data will be displayed here -->
+        <div id="weatherReport"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="fetchWeatherData()">Get Weather</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-pagelines" aria-hidden="true"></span>
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Crop monitor and Disease Prediction</h4>
+              <p>Provides the cause and solution of the identified diseases.</p>
+              <button id="openTestPopup" class="btn btn-primary">Predict</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3 service-grid-wthree text-center">
+          <div class="ser-Agriculture-grid">
+            <div class="about-icon mb-md-4 mb-3">
+              <span class="fa fa-leaf" aria-hidden="true"></span>
+            </div>
+            <div class="ser-sevice-grid">
+              <h4 class="pb-3">Crop Recommendation and Price Prediction</h4>
+              <p>Recommends crop based on the N, P, K and rainfall etc.</p>
+              <button id="openCropPopup" class="btn btn-primary">Recommend Crop</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--<section class="blog_w3ls py-3 pb-5 pt-10" id="test">
+    <div class="container pb-xl-5 pb-lg-3">
+      <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"> Test Your Plants</h3>
+      <div class="row" style="justify-content: center;">
+        <form action="{{ url_for('predict') }}" method="POST" enctype=multipart/form-data>
+          <div class="form-group text-center">
+            <label for="exampleFormControlFile1"><b>Input a file</b></label>
+            <input type="file" name="file" class="form-control-file" id="inputImage" onchange=previewImage(event)
+              required>
+            <br />
+            <button class="btn btn-primary" type="submit"> Predict </button>
+          </div>
+        </form>
+      </div>
+      <img id="output-image" class="rounded mx-auto d-block" />
+      <br />
+    </div>
+
+  </section>-->
+  <!-- Test Your Plants pop-up content -->
+  <div id="testPopup" class="popup">
+    <button onclick="closeTestPopup()" class="close">&times;</button>
+    <section class="blog_w3ls py-3 pb-5 pt-10" id="test">
+      <div class="container pb-xl-5 pb-lg-3">
+        <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"> Test Your Plants</h3>
+        <div class="row" style="justify-content: center;">
+          <!-- Form to upload an image -->
+          <form id="imageForm" action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group text-center">
+              <label for="exampleFormControlFile1"><b>Upload an image</b></label>
+              <input type="file" name="file" class="form-control-file" id="inputImage" accept="image/*" required>
+              <br />
+              <!-- Button to capture image from camera -->
+              <button type="button" class="btn btn-primary" id="captureButton">Capture Image</button>
+              <!-- Button to submit the form -->
+              <button class="btn btn-primary" type="submit">Predict</button>
+            </div>
+          </form>
+        </div>
+        <!-- Container for displaying captured image -->
+        <div class="row" style="justify-content: center;">
+          <div class="col-md-6 text-center">
+            <img id="output-image" class="rounded" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="container pt-5 pb-3">
+      <div class="footer-w3layouts-head text-center">
+        <h2><a href="index.html">Farm Friend</a></h2>
+      </div>
+      <div class="bottem-wthree-footer text-center pt-md-4 pt-3">
+      </div>
+      <!-- move icon -->
+      <div class="text-center">
+        <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </footer>
+  <!--//footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function previewImage(event) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        var output = document.getElementById('output-image')
+        output.src = reader.result;
+      }
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+  <!-- <script>
+    // Function to open the test popup
+    function openTestPopup() {
+      document.getElementById('testPopup').style.display = 'block';
+    }
+  
+    // Function to close the test popup
+    function closeTestPopup() {
+      document.getElementById('testPopup').style.display = 'none';
+    }
+  
+    // Add event listener to the button
+    document.getElementById('openTestPopup').addEventListener('click', openTestPopup);
+  </script> -->
+    <!-- Your custom scripts -->
+    <script>
+      // Function to open the test popup
+      function openTestPopup() {
+        document.getElementById('testPopup').style.display = 'block';
+      }
+  
+      // Function to close the test popup
+      function closeTestPopup() {
+        document.getElementById('testPopup').style.display = 'none';
+      }
+  
+      // Add event listener to the button
+      document.getElementById('openTestPopup').addEventListener('click', openTestPopup);
+  
+      // Function to capture image from camera
+      function captureImage() {
+        var video = document.createElement('video');
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+  
+        navigator.mediaDevices.getUserMedia({ video: true })
+          .then(function (stream) {
+            video.srcObject = stream;
+            video.play();
+          });
+  
+        video.addEventListener('loadeddata', function () {
+          canvas.width = video.videoWidth;
+          canvas.height = video.videoHeight;
+          ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+  
+          var dataURL = canvas.toDataURL('image/jpeg');
+          document.getElementById('output-image').src = dataURL;
+  
+          video.srcObject.getVideoTracks()[0].stop(); // Stop video stream
+  
+          // Hide the capture button after capturing
+          document.getElementById('captureButton').style.display = 'none';
+  
+          // Automatically submit the form after capturing
+          document.getElementById('imageForm').submit();
+        });
+      }
+  
+      // Add event listener to the capture button
+      document.getElementById('captureButton').addEventListener('click', captureImage);
+    </script>
+<script>
+  function fetchWeatherData() {
+    let location = document.getElementById('inputLocation').value.trim();
+    if (!location) {
+      alert('Please enter a location.');
+      return;
+    }
+
+    let url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=us&key=XC52BDVEMRZ36XS9CU6G782P4&contentType=json`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        let temperature = data.days[0].temp;
+        let humidity = data.days[0].humidity;
+        let rainfall = data.days[0].precip;
+
+        // Display weather report in the modal body
+        let weatherReport = document.getElementById('weatherReport');
+        weatherReport.innerHTML = `
+          <p>Temperature: ${temperature} °F</p>
+          <p>Humidity: ${humidity}%</p>
+          <p>Rainfall: ${rainfall} inches</p>
+        `;
+
+        // Clear input field
+        document.getElementById('inputLocation').value = '';
+      })
+      .catch(error => {
+        console.error('Error fetching weather data:', error);
+        alert('Failed to fetch weather data. Please try again.');
+      });
+  }
+</script>
+<script>
+  // Function to open the crop recommendation popup
+  function openCropPopup() {
+    document.getElementById('cropPopup').style.display = 'block';
+    // Call the backend to recommend crop and update the popup content
+    $.post("/recommend_crop", { /* Add parameters for recommendation */ }, function (data, status) {
+      $("#recommendedCrop").text(data.recommendedCrop);
+    });
+  }
+
+  // Function to close the crop recommendation popup
+  function closeCropPopup() {
+    document.getElementById('cropPopup').style.display = 'none';
+  }
+
+  // Add event listener to the button
+  document.getElementById('openCropPopup').addEventListener('click', openCropPopup);
+</script>
+<script>
+  $(document).ready(function () {
+    $("#detectButton").click(function () {
+      $.get("/getMoistureData", function (data, status) {
+        $("#moistureLevel").text("Moisture Level: " + data.moistureValue);
+        $("#wateringStatus").text("Watering Status: " + (data.pumpState ? "Watering" : "Not Watering"));
+        $("#moistureState").text("Moisture State: " + (data.moistureValue >= 950 ? "High" : "Low"));
+        $("#popup").show();
+      });
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
