@@ -73,6 +73,10 @@ https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/asse
 
 
 
+https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/886a813c-d36c-4e92-b1e0-a20b0c6eb7a4
+
+
+
 
 
 ## Features
@@ -93,7 +97,7 @@ https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/asse
 
 ## Drive Link
 
-For detailed explanation refer to our [Farm Drive Folder](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link)).
+For detailed explanation refer to our [Farm Drive Folder](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link))
 
 For Models that are trained for the Disease Prediction  [Model](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
 
@@ -101,7 +105,7 @@ For Models that are trained for the Disease Prediction  [Model](https://drive.go
 ## Contributors
 
 - Shobika ([@Shobika-k2004](https://github.com/Shobika-k2004))
-- Rithika ([@janesmith](https://github.com/janesmith))
-- Sahaana ([@alexj](https://github.com/alexj))
+- Rithika ([@rithika-ts](https://github.com/RITHIKA-TS))
+- Sahaana ([@Sahaana-k](https://github.com/Sahaana-k))
   
-![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b93904d1-c66e-4e02-ade2-51c7686e9793)
+
