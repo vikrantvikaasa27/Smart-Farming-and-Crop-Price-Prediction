@@ -22,12 +22,6 @@ Our solution leverages Intel TensorFlow and also used the sklearnex for the crop
 
 
 
-## Contributors
-
-- Shobika ([@Shobika-k2004](https://github.com/Shobika-k2004))
-- Rithika ([@janesmith](https://github.com/janesmith))
-- Sahaana ([@alexj](https://github.com/alexj))
-
 ## Installation
 
 1. Clone the repository to your local machine:
@@ -73,8 +67,11 @@ Our solution leverages Intel TensorFlow and also used the sklearnex for the crop
 
 ![Screenshot 2024-04-01 001819](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/0b2b7803-62b5-402a-a66c-bee0b5c94428)
 
+## Sample Output Video
 
-![FarmFriend-GoogleChrome2024-04-0100-17-51-ezgif com-video-to-gif-converter](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/ef4fe6e6-4a6a-4faf-b73a-a48e482fa319)
+https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/dbdab3ab-47b3-4c9f-bfe6-43a8e559407a
+
+
 
 
 
@@ -101,4 +98,10 @@ For detailed explanation refer to our [Farm Drive Folder](https://drive.google.c
 For Models that are trained for the Disease Prediction  [Model](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
 
 
+## Contributors
+
+- Shobika ([@Shobika-k2004](https://github.com/Shobika-k2004))
+- Rithika ([@janesmith](https://github.com/janesmith))
+- Sahaana ([@alexj](https://github.com/alexj))
+  
 ![image](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b93904d1-c66e-4e02-ade2-51c7686e9793)
