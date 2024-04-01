@@ -101,6 +101,8 @@ For detailed explanation refer to our [Farm Drive Folder](https://drive.google.c
 
 For Models that are trained for the Disease Prediction  [Model](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
 
+prottotype link [Farm app protype link](https://www.figma.com/file/spkCTRR1PRQTx1Eeb8PVFn/Farm-Friend-(Community)?type=design&mode=design&t=RSDF78n1SWSQXTe1-0)
+
 
 ## Contributors
 
