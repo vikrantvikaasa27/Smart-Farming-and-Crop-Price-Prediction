@@ -88,7 +88,7 @@ https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/asse
 
 - **Frontend:** Flutter, React.js, HTML5, CSS3, JavaScript
 - **Backend:** Python (Flask)
-- **AI/ML:** Intel OneDNN, TensorFlow, OpenCV
+- **AI/ML:** TensorFlow, OpenCV
 - **IoT:** ESP8266, Soil moisture 
 
 ## Drive Link
