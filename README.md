@@ -1,9 +1,9 @@
 
-# Farm - Intelligent Farming Mobile and Web App
+# Farm Friend  
 
 
 
-Farm is an intelligent farming system that harmoniously integrates IoT and AI technologies to optimize agricultural practices and enhance crop management for farmers.
+Farm Friend is an intelligent farming system that harmoniously integrates IoT and AI technologies to optimize agricultural practices and enhance crop management for farmers.
 
 ## Problem Statement
 
@@ -11,14 +11,15 @@ Design an intelligent farming system that harmoniously integrates IoT and AI tec
 
 ## Proposed Solution
 
-Our proposed solution is a mobile and web app named "Farm" that optimizes agricultural practices and enhances crop management for farmers. It employs technologies like OpenCV to monitor crops, enables users to remotely observe crop health, and detects diseases at early stages. The app integrates weather report systems, provides real-time forecasts, and waters and fertilizes based on prevailing weather conditions. It integrates with automation systems to execute tasks in the absence of the farmer, ensuring consistent farm operations and maximizing productivity.
+Our proposed solution is a mobile and web app named "Farm Friend" that optimizes agricultural practices and enhances crop management for farmers. It employs technologies like OpenCV to monitor crops, enables users to remotely observe crop health, and detects diseases at early stages. The app integrates weather report systems, provides real-time forecasts, and waters and fertilizes based on prevailing weather conditions. It integrates with automation systems to execute tasks in the absence of the farmer, ensuring consistent farm operations and maximizing productivity.
 
 
 ![untitled (1)](https://github.com/vikrantvikaasa27/Smart-Farming-and-Crop-Price-Prediction/assets/94424716/b409c371-1702-4478-a681-8befed6f9304)
 
 ## Intel Tools
-
-Our solution leverages Intel TensorFlow and also used the sklearnex for the crop reecommendation for efficient and accurate crop disease prediction. By utilizing it's capabilities, Farm ensures reliable and high-performance AI-driven insights for farmers.
+- Intel TensorFlow
+- Intel AI base toolkit
+- Intel Extension for Sklearn
 
 
 
@@ -101,7 +102,7 @@ For detailed explanation refer to our [Farm Drive Folder](https://drive.google.c
 
 For Models that are trained for the Disease Prediction  [Model](https://drive.google.com/drive/folders/1g2hzkn0VZ8yKnyBZg7_p83glG7NSvM5F?usp=drive_link](https://drive.google.com/drive/folders/1Q3j9XH-y5P87Qtl5GHsazNLn6B5UOhB3?usp=drive_link))
 
-prottotype link [Farm app protype link](https://www.figma.com/file/spkCTRR1PRQTx1Eeb8PVFn/Farm-Friend-(Community)?type=design&mode=design&t=RSDF78n1SWSQXTe1-0)
+prototype link [Farm app prototype link](https://www.figma.com/file/spkCTRR1PRQTx1Eeb8PVFn/Farm-Friend-(Community)?type=design&mode=design&t=RSDF78n1SWSQXTe1-0)
 
 
 ## Contributors
