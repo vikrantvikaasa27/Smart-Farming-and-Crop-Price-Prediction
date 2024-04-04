@@ -35,7 +35,7 @@ Our proposed solution is a mobile and web app named "Farm Friend" that optimizes
    cd Flask_App
    ```
 
-3. Install dependencies using pip (Python 3.7+ required):
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
